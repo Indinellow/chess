@@ -36,6 +36,31 @@ class Game
 end
 
 new_game = Game.new
-new_game.chess_board.move_piece("d2","d6")
-new_game.chess_board.display_curr_board
-p new_game.pick_piece("c2").move_legal?("d3")
+# new_game.chess_board.move_piece("a1","f4")
+# new_game.chess_board.move_piece("c7","c4")
+# new_game.chess_board.display_curr_board
+# new_game.pick_piece("f4").fill_moveset
+# p new_game.pick_piece("f4").moveset
+
+# testing for bishop movement
+# new_game.chess_board.move_piece("c1","d4")
+# new_game.chess_board.move_piece("f7","f6")
+# new_game.chess_board.move_piece("c7","c5")
+# new_game.chess_board.display_curr_board
+# new_game.pick_piece("d4").fill_moveset
+# p new_game.pick_piece("d4").moveset
+
+# testing for queen movement
+# new_game.chess_board.move_piece("d1","e5")
+# new_game.chess_board.move_piece("f7","f6")
+# new_game.chess_board.move_piece("c7","c5")
+# new_game.chess_board.display_curr_board
+# new_game.pick_piece("e5").fill_moveset
+# p new_game.pick_piece("e5").moveset
+
+# testing for knight movement
+# new_game.chess_board.move_piece("b8","a5")
+# new_game.chess_board.display_curr_board
+# new_game.pick_piece("a5").fill_moveset
+# p new_game.pick_piece("a5").moveset
+

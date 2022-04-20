@@ -106,6 +106,7 @@ class ChessBoard
     piece = @board[start_coords[0]][start_coords[1]]
     @board[end_coords[0]][end_coords[1]] = piece
     piece.position = end_pos
+    piece.coordinates = position_to_coordinates(end_pos)
     @board[start_coords[0]][start_coords[1]] = nil
     piece.moved = true if piece.moved == false 
   end

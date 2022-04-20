@@ -4,10 +4,11 @@
  
 # class that holds all chess pieces, each chess piece is a subclass of this class
 class ChessPiece
-  attr_accessor :icon, :position, :color, :board, :moved
+  attr_accessor :icon, :position, :color, :board, :moved, :coordinates
 
   def initialize (name, color ,position, board=nil)
     @position = position
+    @coordinates = position_to_coordinates(@position)
     @color = color
     @board = board
     @moved = false
